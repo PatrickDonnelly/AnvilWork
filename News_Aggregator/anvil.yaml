@@ -1,0 +1,54 @@
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: false}
+startup: {type: form, module: Homepage}
+package_name: News_Aggregator
+allow_embedding: false
+name: News Aggregator
+runtime_options: {version: 2, client_version: '3', server_version: python3-full}
+metadata: {}
+db_schema:
+- name: categories
+  id: 100370
+  python_name: categories
+  columns:
+    FP_787lpEaQ=:
+      name: name
+      type: string
+      admin_ui: {order: 0, width: 200}
+  access: {python_name: categories, app_id: VBHA5UAUMFOY75ST, server: full, client: search,
+    table_mapping_name: null, table_mapping_id: null, table_id: 100370}
+- name: articles
+  id: 100369
+  python_name: articles
+  columns:
+    6cNAVuYw+t8=:
+      name: category
+      type: liveObject
+      backend: anvil.tables.Row
+      admin_ui: {order: 5, width: 200}
+      table_id: 100370
+    E2yYFEHgLX0=:
+      name: image
+      type: media
+      admin_ui: {order: 2, width: 200}
+    EjSAzQ4+Qas=:
+      name: created
+      type: datetime
+      admin_ui: {order: 3, width: 200}
+    V+95iKDx_0w=:
+      name: title
+      type: string
+      admin_ui: {order: 0, width: 200}
+    YwAXZq7gfE8=:
+      name: content
+      type: string
+      admin_ui: {order: 1, width: 200}
+    b6B01XTRhV0=:
+      name: updated
+      type: datetime
+      admin_ui: {order: 3.5, width: 200}
+  access: {python_name: articles, app_id: VBHA5UAUMFOY75ST, server: full, client: none,
+    table_mapping_name: null, table_mapping_id: null, table_id: 100369}
+renamed: true
