@@ -1,0 +1,36 @@
+allow_embedding: false
+package_name: My_First_Webapp
+db_schema:
+- name: feedback
+  id: 100361
+  python_name: feedback
+  columns:
+    1f8c7yDoa1M=:
+      name: email
+      type: string
+      admin_ui: {order: 1, width: 200}
+    EZZZN0ZNLPw=:
+      name: feedback
+      type: string
+      admin_ui: {order: 2, width: 200}
+    J9CtCPi2BPQ=:
+      name: name
+      type: string
+      admin_ui: {order: 0, width: 200}
+    d_wo31MuJn8=:
+      name: created
+      type: datetime
+      admin_ui: {order: 3, width: 200}
+  access: {python_name: feedback, app_id: XLV5YRDE3GWFEAJE, server: full, client: none,
+    table_mapping_name: null, table_mapping_id: null, table_id: 100361}
+name: My First Webapp
+startup_form: Form1
+renamed: true
+runtime_options: {version: 2, client_version: '3', server_version: python3-full}
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: false}
+- source: /runtime/services/anvil/email.yml
+  client_config: {}
+  server_config: {}

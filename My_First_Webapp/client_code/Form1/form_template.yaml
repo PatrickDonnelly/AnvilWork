@@ -1,0 +1,67 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_1
+    layout_properties: {grid_position: 'KSYQXI,OEYFMG'}
+    components:
+    - type: Label
+      properties: {role: headline, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Feedback Form, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_1
+      layout_properties: {grid_position: 'MPFAGH,SYCXPB'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Name :', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_2
+      layout_properties: {grid_position: 'OLLULL,YSIHZI'}
+    - type: TextBox
+      properties: {}
+      name: name_box
+      layout_properties: {grid_position: 'OLLULL,EKWFAU'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Email :', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_3
+      layout_properties: {grid_position: 'LKCFJV,DCALXJ'}
+    - type: TextBox
+      properties: {}
+      name: email_box
+      layout_properties: {grid_position: 'LKCFJV,NMYQRL'}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Feedback :', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_4
+      layout_properties: {grid_position: 'QRJPSU,CAWCIX'}
+    - type: TextArea
+      properties: {}
+      name: feedback_box
+      layout_properties: {grid_position: 'GKLKJN,VDMCII'}
+    - type: Button
+      properties: {role: primary-color, align: center, tooltip: '', border: '', enabled: true,
+        foreground: '', visible: true, text: Submit, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: submit_button
+      layout_properties: {grid_position: 'CHOEBV,LEATSX'}
+      event_bindings: {click: submit_button_click}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
