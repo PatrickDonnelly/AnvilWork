@@ -1,0 +1,135 @@
+is_package: true
+container:
+  type: HtmlTemplate
+  properties: {html: '@theme:standard-page.html'}
+components:
+- type: ColumnPanel
+  properties: {col_widths: '{}'}
+  name: content_panel
+  layout_properties: {slot: default}
+  components:
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: small, background: ''}
+    name: card_5
+    layout_properties: {grid_position: 'WIZYUK,WVLHJD', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Highest revenue, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_2
+      layout_properties: {grid_position: 'VHOGRC,YQDWNM'}
+    - type: Label
+      properties: {}
+      name: revenue_label
+      layout_properties: {grid_position: 'JBGHRA,ZDGWKU'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_6
+    layout_properties: {grid_position: 'WIZYUK,ZHTLPB', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Highest signups, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_3
+      layout_properties: {grid_position: 'VCJTXT,HSPJQO'}
+    - type: Label
+      properties: {}
+      name: signups_label
+      layout_properties: {grid_position: 'EKDZQM,RULIHC'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_7
+    layout_properties: {grid_position: 'WIZYUK,LIRWVI', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: Top marketing strategy, font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_4
+      layout_properties: {grid_position: 'DZDPJI,IEYFBI'}
+    - type: Label
+      properties: {}
+      name: marketing_label
+      layout_properties: {grid_position: 'YSMEEZ,UDFJUI'}
+  - type: ColumnPanel
+    properties: {role: card, col_widths: '{}'}
+    name: card_8
+    layout_properties: {grid_position: 'WIZYUK,OVFLVV', full_width_row: true}
+    components:
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: 'Max temp:', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+        underline: false, icon: ''}
+      name: label_5
+      layout_properties: {grid_position: 'CRGEIR,GWHQXD'}
+    - type: Label
+      properties: {}
+      name: weather_label
+      layout_properties: {grid_position: 'CABKJM,FGRVYP'}
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: small, background: ''}
+    name: card_1
+    layout_properties: {grid_position: 'NVLGNM,EKNPTT', full_width_row: true}
+    components:
+    - type: Plot
+      properties: {height: 238}
+      name: plot_1
+      layout_properties: {grid_position: 'EULADM,FYIIMV', full_width_row: true}
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: small, background: ''}
+    name: card_2
+    layout_properties: {grid_position: 'NVLGNM,PVDTTJ', full_width_row: true}
+    components:
+    - type: Plot
+      properties: {height: 237}
+      name: plot_2
+      layout_properties: {grid_position: 'VTUVET,AIGKSQ', full_width_row: true}
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: small, background: ''}
+    name: card_3
+    layout_properties: {grid_position: 'HIMITO,IDHCKS', full_width_row: true}
+    components:
+    - type: Plot
+      properties: {height: 254}
+      name: plot_3
+      layout_properties: {grid_position: 'ESLEDJ,UWVAWY', full_width_row: true}
+  - type: ColumnPanel
+    properties: {role: card, tooltip: '', border: '', foreground: '', visible: true,
+      wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
+      spacing_below: small, background: ''}
+    name: card_4
+    layout_properties: {grid_position: 'HIMITO,YFCXEM', full_width_row: true}
+    components:
+    - type: Plot
+      properties: {height: 253}
+      name: plot_4
+      layout_properties: {grid_position: 'SAEIWU,ULNGPH', full_width_row: true}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
+- type: Label
+  properties: {role: null, align: left, tooltip: '', border: '', foreground: '', visible: true,
+    text: DATA DASHBOARD, font_size: null, font: '', spacing_above: small, icon_align: left,
+    spacing_below: small, italic: false, background: '', bold: false, underline: false,
+    icon: ''}
+  name: label_1
+  layout_properties: {slot: title}
+- type: Timer
+  properties: {interval: 2}
+  name: timer_1
+  event_bindings: {tick: timer_1_tick}

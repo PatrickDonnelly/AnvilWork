@@ -1,0 +1,26 @@
+services:
+- source: /runtime/services/tables.yml
+  client_config: {}
+  server_config: {auto_create_missing_columns: false}
+package_name: Data_Analysis_Webapp
+allow_embedding: false
+name: Data Analysis Webapp
+runtime_options: {version: 2, client_version: '3', server_version: python3-full}
+metadata: {}
+startup_form: Form1
+db_schema:
+- name: Revenue
+  id: 105999
+  python_name: revenue
+  columns:
+    2vowCcADxlU=:
+      name: date
+      type: date
+      admin_ui: {order: 1, width: 200}
+    Jf08tuBQfFk=:
+      name: amount
+      type: number
+      admin_ui: {order: 0, width: 200}
+  access: {python_name: revenue, app_id: QU6SPOEZTDYJCRHG, server: full, client: none,
+    table_mapping_name: null, table_mapping_id: null, table_id: 105999}
+renamed: true
